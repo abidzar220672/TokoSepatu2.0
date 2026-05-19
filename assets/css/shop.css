@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color: rgb(0, 0, 0); 
+    display:flex ;
+    justify-content: center;  /* horizontal */
+    align-items: center;      /* vertikal */
+    padding-top: 10px;
+}
+
+nav .icon {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    font-size: 25px;
+   padding-top: 13px;
+   padding-right: 20px;
+   
+}
+.dropdown-icon {
+    padding-top: 13px;
+    padding-left: 20px;
+}
+/* .judulshop{
+    margin-top: 20px;
+    padding-left: 20px;
+} */
+
+     footer{
+      background: #272424;
+      color: #fff;
+      padding: 40px 20px;
+    }
+    .footer-isi{
+      max-width: 600px;
+      /* background-color: aqua; */
+    }
+    details {
+      border-bottom: 1px solid #ffffff;
+      padding: 15px 0;
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "▾";
+      font-size: 0.9rem;
+    }
+
+    details[open] summary::after {
+      content: "▴";
+    }
+    .footer-mediasosial {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+
+    .akun-sosialmedia {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
