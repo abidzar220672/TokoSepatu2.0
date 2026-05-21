@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Struktur: admin-page -> admin -> page -> assets -> config
-require_once __DIR__ . '/../../../../config/koneksi.php';
+require_once __DIR__ . '/../../../config/koneksi.php';
 
 $gender   = mysqli_query($conn, "SELECT * FROM gender ORDER BY gender ASC");
 $kategori = mysqli_query($conn, "SELECT * FROM kategori ORDER BY kategori ASC");

@@ -1,6 +1,6 @@
 <?php
 // Struktur: admin-page -> admin -> page -> assets -> config
-require_once __DIR__ . '/../../../../config/koneksi.php';
+require_once __DIR__ . '/../../../config/koneksi.php';
 
 if (isset($_POST['submit'])) {
     $id_gender   = (int) $_POST['id_gender'];
