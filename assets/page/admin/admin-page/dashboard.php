@@ -1,14 +1,10 @@
 <?php
-// 1. Tampilkan semua error untuk mempermudah tracking
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// 2. Aktifkan laporan error mysqli
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-// 3. Path Koneksi - Menggunakan __DIR__ agar path absolut dan aman di hosting
-// Struktur: admin-page -> admin (..) -> page (..) -> assets (..) -> config
 $path_koneksi = __DIR__ . "/../../../config/koneksi.php";
 
 if (file_exists($path_koneksi)) {
@@ -17,10 +13,9 @@ if (file_exists($path_koneksi)) {
     die("Error: File koneksi.php tidak ditemukan di: " . $path_koneksi);
 }
 
-// 4. Query JOIN - Pastikan nama tabel dan kolom sesuai database
 try {
     $query = "
-      SELECT 
+      SELECT
         sk.sub_kategori_id,
         g.gender,
         p.nama_produk,
@@ -30,8 +25,6 @@ try {
       JOIN produk p ON sk.id_produk = p.id_produk
       JOIN kategori k ON sk.id_kategori = k.id_kategori
     ";
-
-    // Gunakan $conn (pastikan di koneksi.php namanya sama)
     $result = mysqli_query($conn, $query);
 } catch (Exception $e) {
     die("Kesalahan Query: " . $e->getMessage());
