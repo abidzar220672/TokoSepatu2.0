@@ -1,5 +1,5 @@
 <?php
-include '../../../config/koneksi.php';
+require_once __DIR__ . '/../../../config/koneksi.php';
 
 if (isset($_POST['submit'])) {
     $id_gender   = (int) $_POST['id_gender'];
@@ -24,7 +24,6 @@ if (isset($_POST['submit'])) {
     }
 
     $stmt_sub->close();
-    // FIX: Hapus header() di sini karena sudah ada redirect via JavaScript di atas
     exit;
 }
 ?>

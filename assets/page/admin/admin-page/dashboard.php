@@ -5,13 +5,7 @@ error_reporting(E_ALL);
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-$path_koneksi = __DIR__ . "/../../../config/koneksi.php";
-
-if (file_exists($path_koneksi)) {
-    include $path_koneksi;
-} else {
-    die("Error: File koneksi.php tidak ditemukan di: " . $path_koneksi);
-}
+require_once __DIR__ . '/../../../config/koneksi.php';
 
 try {
     $query = "

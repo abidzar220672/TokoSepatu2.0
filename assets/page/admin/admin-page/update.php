@@ -1,8 +1,7 @@
 <?php
-require_once '../../../config/koneksi.php';
+require_once __DIR__ . '/../../../config/koneksi.php';
 
 if (isset($_POST['update'])) {
-    // FIX: Cast semua ID ke integer agar type binding "iiii" benar
     $id          = (int) $_POST['sub_kategori_id'];
     $id_gender   = (int) $_POST['id_gender'];
     $nama_produk = trim($_POST['nama_produk']);
@@ -38,11 +37,9 @@ if (isset($_POST['update'])) {
     }
 
     $stmt_update->close();
-    // FIX: Pakai exit setelah echo/script, bukan header()
     exit;
 }
 
-// Jika akses langsung tanpa POST
 header("Location: dashboard.php");
 exit;
 ?>

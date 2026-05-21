@@ -3,14 +3,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// FIX: Hanya satu include, pakai path absolut dengan __DIR__
-$path_koneksi = __DIR__ . '/../../../config/koneksi.php';
-
-if (file_exists($path_koneksi)) {
-    include $path_koneksi;
-} else {
-    die("File koneksi tidak ditemukan di: " . $path_koneksi);
-}
+require_once __DIR__ . '/../../../config/koneksi.php';
 
 $gender   = mysqli_query($conn, "SELECT * FROM gender ORDER BY gender ASC");
 $kategori = mysqli_query($conn, "SELECT * FROM kategori ORDER BY kategori ASC");

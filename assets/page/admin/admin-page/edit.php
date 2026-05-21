@@ -1,7 +1,6 @@
 <?php
-include '../../../config/koneksi.php';
+require_once __DIR__ . '/../../../config/koneksi.php';
 
-// FIX: Validasi ID dan gunakan prepared statement (hindari SQL injection)
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
     echo "<script>alert('ID tidak valid!'); window.history.back();</script>";
     exit;
@@ -9,7 +8,6 @@ if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
 
 $id = (int) $_GET['id'];
 
-// FIX: Prepared statement + JOIN untuk ambil nama_produk sekaligus
 $stmt = $conn->prepare("
     SELECT sk.*, p.nama_produk
     FROM sub_kategori sk
@@ -84,7 +82,6 @@ $kategori = mysqli_query($conn, "SELECT * FROM kategori");
 
         <div class="field">
           <label for="nama_produk">Nama Produk</label>
-          <!-- FIX: Tambahkan value agar terisi data yang sudah ada -->
           <input type="text" name="nama_produk" id="nama_produk"
                  value="<?= htmlspecialchars($row['nama_produk']); ?>" required>
         </div>
