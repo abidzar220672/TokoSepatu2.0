@@ -1,8 +1,21 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 include '../../../config/koneksi.php';
 
+if (!isset($_GET['id'])) {
+    die("ID tidak ditemukan");
+}
+
 $id = $_GET['id'];
-$data = mysqli_query($conn, "SELECT * FROM sub_kategori WHERE sub_kategori_id = '$id'");
+
+$data = mysqli_query($conn, "SELECT * FROM sub_kategori WHERE sub_kategori_id='$id'");
+
+if (!$data) {
+    die(mysqli_error($conn));
+}
+
 $row = mysqli_fetch_assoc($data);
 
 $gender = mysqli_query($conn, "SELECT * FROM gender");
