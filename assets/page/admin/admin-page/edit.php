@@ -1,24 +1,13 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-require_once '../../../config/koneksi.php';
-
-echo "EDIT TERBUKA";
-
-if (!isset($_GET['id'])) {
-    die("ID tidak ada");
-}
+include '../../../config/koneksi.php';
 
 $id = $_GET['id'];
-
-$data = mysqli_query($conn, "SELECT * FROM sub_kategori WHERE sub_kategori_id='$id'");
-
-if (!$data) {
-    die(mysqli_error($conn));
-}
-
+$data = mysqli_query($conn, "SELECT * FROM sub_kategori WHERE sub_kategori_id = '$id'");
 $row = mysqli_fetch_assoc($data);
+
+$gender = mysqli_query($conn, "SELECT * FROM gender");
+$produk = mysqli_query($conn, "SELECT * FROM produk");
+$kategori = mysqli_query($conn, "SELECT * FROM kategori");
 ?>
 
 <!DOCTYPE html>
