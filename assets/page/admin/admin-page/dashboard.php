@@ -4,7 +4,10 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-include $_SERVER['DOCUMENT_ROOT'] . "/TokoSepatu/assets/config/koneksi.php";
+
+// PERBAIKAN 1: Menggunakan path relatif agar tidak bingung dengan DOCUMENT_ROOT
+// Sesuaikan jumlah ../ jika posisi file config berbeda
+include "../../../config/koneksi.php"; 
 
 // Query lengkap dengan JOIN antar tabel
 $query = "
@@ -42,7 +45,8 @@ $result = mysqli_query($conn, $query);
 
   <div class="top-bar">
     <h2>Data Sub Kategori</h2>
-    <a href="/TokoSepatu/assets/page/admin/admin-page/form.php" class="button">+ Tambah Data</a>
+    <!-- PERBAIKAN 2: Menghapus folder /TokoSepatu/ ganda pada link -->
+    <a href="/assets/page/admin/admin-page/form.php" class="button">+ Tambah Data</a>
   </div>
 
   <table>
@@ -61,8 +65,9 @@ $result = mysqli_query($conn, $query);
         <td><?= htmlspecialchars($row['nama_produk']); ?></td>
         <td><?= htmlspecialchars($row['kategori']); ?></td>
         <td>
-          <a href="/tokosepatu/assets/page/admin/admin-page/edit.php?id=<?= $row['sub_kategori_id']; ?>" class="button">Edit</a>
-          <a href="/tokosepatu/assets/page/admin/admin-page/delete.php?id=<?= $row['sub_kategori_id']; ?>" class="button delete" onclick="return confirm('Yakin ingin menghapus data ini?')">Hapus</a>
+          <!-- PERBAIKAN 3: Memastikan path link konsisten (huruf kecil semua) -->
+          <a href="/assets/page/admin/admin-page/edit.php?id=<?= $row['sub_kategori_id']; ?>" class="button">Edit</a>
+          <a href="/assets/page/admin/admin-page/delete.php?id=<?= $row['sub_kategori_id']; ?>" class="button delete" onclick="return confirm('Yakin ingin menghapus data ini?')">Hapus</a>
         </td>
       </tr>
     <?php endwhile; ?>
