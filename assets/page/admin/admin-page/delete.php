@@ -1,4 +1,5 @@
 <?php
+// Struktur: admin-page -> admin -> page -> assets -> config
 require_once __DIR__ . '/../../../../config/koneksi.php';
 
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
