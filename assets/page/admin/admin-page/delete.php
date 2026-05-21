@@ -1,11 +1,6 @@
 <?php
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$koneksiPath = __DIR__ . '/../../../config/koneksi.php';
-if (!file_exists($koneksiPath)) {
-  echo "<script>alert('File koneksi tidak ditemukan!'); window.history.back();</script>";
-  exit;
-}
-require_once $koneksiPath;
+include $_SERVER['DOCUMENT_ROOT'] . "/TokoSepatu/assets/config/koneksi.php";
 
 // Validasi ID
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
