@@ -1,23 +1,29 @@
 <?php
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-include $_SERVER['DOCUMENT_ROOT'] . "/TokoSepatu/assets/config/koneksi.php";
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-// Query lengkap dengan JOIN antar tabel
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
+require_once $_SERVER['DOCUMENT_ROOT'] . "/assets/config/koneksi.php";
+
 $query = "
-  SELECT 
-    sub_kategori.sub_kategori_id,
-    gender.gender,
-    produk.nama_produk,
-    kategori.kategori
-  FROM sub_kategori
-  JOIN gender ON sub_kategori.id_gender = gender.id_gender
-  JOIN produk ON sub_kategori.id_produk = produk.id_produk
-  JOIN kategori ON sub_kategori.id_kategori = kategori.id_kategori
+SELECT 
+  sub_kategori.sub_kategori_id,
+  gender.gender,
+  produk.nama_produk,
+  kategori.kategori
+FROM sub_kategori
+JOIN gender ON sub_kategori.id_gender = gender.id_gender
+JOIN produk ON sub_kategori.id_produk = produk.id_produk
+JOIN kategori ON sub_kategori.id_kategori = kategori.id_kategori
 ";
 
 $result = mysqli_query($conn, $query);
-?>
 
+if (!$result) {
+    die(mysqli_error($conn));
+}
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
