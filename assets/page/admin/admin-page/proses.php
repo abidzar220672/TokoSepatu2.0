@@ -1,5 +1,5 @@
 <?php
-include '../../../config/koneksi.php';
+include __DIR__ . '/../../../../config/koneksi.php';
 
 if (isset($_POST['submit'])) {
   $id_gender = $_POST['id_gender'];

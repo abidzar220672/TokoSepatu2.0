@@ -1,5 +1,5 @@
 <?php
-require_once '../../../../assets/config/koneksi.php';
+require_once __DIR__ . '/../../../../assets/config/koneksi.php';
 
 if (isset($_POST['update'])) {
   $id = $_POST['sub_kategori_id'];
