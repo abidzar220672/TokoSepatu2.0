@@ -1,5 +1,5 @@
 <?php
-include '../../../config/koneksi.php';
+include '/TokoSepatu/assets/config/koneksi.php';
 
 $id = $_GET['id'];
 $data = mysqli_query($conn, "SELECT * FROM sub_kategori WHERE sub_kategori_id = '$id'");
