@@ -1,5 +1,5 @@
 <?php
-require_once '/TokoSepatu/assets/config/koneksi.php';
+require_once '../../../config/koneksi.php';
 
 if (isset($_POST['update'])) {
   $id = $_POST['sub_kategori_id'];

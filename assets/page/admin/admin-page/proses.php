@@ -1,5 +1,5 @@
 <?php
-include '/TokoSepatu/assets/config/koneksi.php';
+include '../../../config/koneksi.php';
 
 if (isset($_POST['submit'])) {
   $id_gender = $_POST['id_gender'];

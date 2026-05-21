@@ -1,5 +1,5 @@
 <?php
-include '/TokoSepatu/assets/config/koneksi.php';
+include '../../../config/koneksi.php';
 
 $gender   = mysqli_query($conn, "SELECT * FROM gender");
 $kategori = mysqli_query($conn, "SELECT * FROM kategori");
