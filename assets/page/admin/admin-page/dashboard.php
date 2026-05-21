@@ -5,7 +5,8 @@ error_reporting(E_ALL);
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-require_once __DIR__ . '/../../../config/koneksi.php';
+// Struktur: admin-page -> admin -> page -> assets -> config
+require_once __DIR__ . '/../../../../config/koneksi.php';
 
 try {
     $query = "

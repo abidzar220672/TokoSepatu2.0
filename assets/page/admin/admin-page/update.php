@@ -1,5 +1,6 @@
 <?php
-require_once __DIR__ . '/../../../config/koneksi.php';
+// Struktur: admin-page -> admin -> page -> assets -> config
+require_once __DIR__ . '/../../../../config/koneksi.php';
 
 if (isset($_POST['update'])) {
     $id          = (int) $_POST['sub_kategori_id'];
@@ -26,7 +27,6 @@ if (isset($_POST['update'])) {
 
     $stmt_cek->close();
 
-    // Update sub_kategori
     $stmt_update = $conn->prepare("UPDATE sub_kategori SET id_gender=?, id_produk=?, id_kategori=? WHERE sub_kategori_id=?");
     $stmt_update->bind_param("iiii", $id_gender, $id_produk, $id_kategori, $id);
 
