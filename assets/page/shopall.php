@@ -1,338 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/shop.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All - Vans</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/shop.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-    <nav>
-      <div class="dropdown-icon">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"        aria-expanded="false" style="background-color: #000000;"> 
-          More
-        </button>
-  <!-- isi dari dropdwon -->
   <?php include '../component/navbar.php'; ?>
 
-
-<!-- logo dan icon Navbar -->
-</div>
-      </div>
-      <div class="logo">
-       <h1>Vans</h1>
-      </div>
-      <div class="icon">
-        <div class="user">
-          <i class="fa-regular fa-user" style="color: #000000;"></i>
-        </div>
-        <div class="search">
-          <i class="fa-solid fa-magnifying-glass"style="color: #000000;"></i>
-        </div>
-        <div class="cart">
-          <i class="fa-solid fa-cart-shopping"style="color:#000000;"></i>
-        </div>
-      </div>
-    </nav>
-    <!-- <div class="judulshop">
-        <h3>Shop</h3>
-    </div> -->
-
-    <div class="container py-5">
-  <h2 class="mb-4">Shop All</h2>
-  <div class="row g-4">
-    
-  
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/17.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">OTW by Vans X S.R. Studio LA. CA. Hockey Jersey</h5>
-          <p class="card-text text-muted">Top Seller</p>
-          <p class="fw-bold">$200.00</p>
-        
-        </div>
-      </div>
-    </div>
-
-
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/18.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Premium Old Skool Tania Shoe</h5>
-          <p class="card-text text-muted">New Arrival</p>
-          <p class="fw-bold">$120.00</p>
-         
-        </div>
-      </div>
-    </div>
-
-    
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/19.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Old Skool Sport Backpack</h5>
-          <p class="card-text text-muted">Limited</p>
-          <p class="fw-bold">$55.00</p>
-          
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/20.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Wyman Trucker Hat</h5>
-          <p class="card-text text-muted">Limited</p>
-          <p class="fw-bold">$24.00</p>
-          
-        </div>
-      </div>
-    </div> 
-  </div>
-</div>
-<!-- Card -->
   <div class="container py-5">
-  <h2 class="mb-4">Women</h2>
-  <div class="row g-4">
-    
-  
-      <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/1.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Old Skool Checkerboard Shoe</h5>
-          <p class="card-text text-muted">Top Seller</p>
-          <p class="fw-bold">$75.00</p>
-        
-        </div>
-      </div>
-    </div>
-
-
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/2.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Sirelle 5 Pocket Puddle Pants</h5>
-          <p class="card-text text-muted">New Arrival</p>
-          <p class="fw-bold">Sirelle 5 Pocket Puddle Pants</p>
-         
-        </div>
-      </div>
-    </div>
-
-    
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/3.jpg" class="card-img-top" alt="Old Skool Black">
-        <div class="card-body text-center">
-          <h5 class="card-title">Salton T-Shirt</h5>
-          <p class="card-text text-muted">Limited</p>
-          <p class="fw-bold">$30.00</p>
-          
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/4.jpg" class="card-img-top" alt="Old Skool Black">
-        <div class="card-body text-center">
-          <h5 class="card-title">Hooked On Mini Bag</h5>
-          <p class="card-text text-muted">Limited</p>
-          <p class="fw-bold">$45.00</p>
-        </div>
-      </div>
-    </div> 
-  </div>
-</div>
-
-<!-- Men -->
-  <div class="container py-5">
-  <h2 class="mb-4">Men</h2>
-  <div class="row g-4">
-    
-  
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/5.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Skate Half Cab</h5>
-          <p class="card-text text-muted">Top Seller</p>
-          <p class="fw-bold">$85.00</p>
-        
-        </div>
-      </div>
-    </div>
-
-
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/6.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Classic Script T-Shirt</h5>
-          <p class="card-text text-muted">New Arrival</p>
-          <p class="fw-bold">$30.00</p>
-         
-        </div>
-      </div>
-    </div>
-
-    
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/7.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Check-5 Loose Denim Pants</h5>
-          <p class="card-text text-muted">Limited</p>
-          <p class="fw-bold">$80.00</p>
-          
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/8.jpg" class="card-img-top" alt="Old Skool Black">
-        <div class="card-body text-center">
-          <h5 class="card-title">Steeplebase Balaclava</h5>
-          <p class="card-text text-muted">Limited</p>
-          <p class="fw-bold">$25.00</p>
-          
-        </div>
-      </div>
+    <h2 class="mb-4">New Arrivals</h2>
+    <div class="row g-4">
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/17.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">OTW by Vans X S.R. Studio LA. CA. Hockey Jersey</h5><p class="card-text text-muted">Top Seller</p><p class="fw-bold">$200.00</p></div></div></div>
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/18.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Premium Old Skool Tania Shoe</h5><p class="card-text text-muted">New Arrival</p><p class="fw-bold">$120.00</p></div></div></div>
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/19.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Old Skool Sport Backpack</h5><p class="card-text text-muted">Limited</p><p class="fw-bold">$55.00</p></div></div></div>
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/20.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Wyman Trucker Hat</h5><p class="card-text text-muted">Limited</p><p class="fw-bold">$24.00</p></div></div></div>
     </div>
   </div>
-</div>
 
-<!-- kids -->
-  <div class="container py-5">
-  <h2 class="mb-4">Kids</h2>
-  <div class="row g-4">
-    
-  
-       <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/9.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Little Kids Sk8-Hi Side Zip Shoe</h5>
-          <p class="card-text text-muted">Top Seller</p>
-          <p class="fw-bold">$45.00</p>
-        
-        </div>
-      </div>
+  <div class="container pb-5">
+    <h2 class="mb-4">Women</h2>
+    <div class="row g-4">
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/1.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Old Skool Checkerboard Shoe</h5><p class="card-text text-muted">Top Seller</p><p class="fw-bold">$75.00</p></div></div></div>
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/2.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Sirelle 5 Pocket Puddle Pants</h5><p class="card-text text-muted">New Arrival</p><p class="fw-bold">$35.00</p></div></div></div>
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/3.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Salton T-Shirt</h5><p class="card-text text-muted">Limited</p><p class="fw-bold">$30.00</p></div></div></div>
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/4.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Hooked On Mini Bag</h5><p class="card-text text-muted">Limited</p><p class="fw-bold">$45.00</p></div></div></div>
     </div>
-
-
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/10.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Little Kids Loot Halloween T-Shirt</h5>
-          <p class="card-text text-muted">New Arrival</p>
-          <p class="fw-bold">$20.00</p>
-         
-        </div>
-      </div>
-    </div>
-
-    
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/11.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Old Skool Drop V Backpack</h5>
-          <p class="card-text text-muted">Limited</p>
-          <p class="fw-bold">$45.00</p>
-          
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/12.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Kids Check-5 Loose Denim Pants</h5>
-          <p class="card-text text-muted">Limited</p>
-          <p class="fw-bold">$75.00</p>
-          
-        </div>
-      </div>
-    </div> 
   </div>
-</div>
 
-
-<!-- new -->
-  <div class="container py-5">
-  <h2 class="mb-4">New</h2>
-  <div class="row g-4">
-    
-  
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/13.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">OTW by Vans X S.R. Studio LA. CA. Old Skool 36 Vibram</h5>
-          <p class="card-text text-muted">Top Seller</p>
-          <p class="fw-bold">$140.00</p>
-        
-        </div>
-      </div>
+  <div class="container pb-5">
+    <h2 class="mb-4">Men</h2>
+    <div class="row g-4">
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/5.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Skate Half Cab</h5><p class="card-text text-muted">Top Seller</p><p class="fw-bold">$85.00</p></div></div></div>
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/6.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Classic Script T-Shirt</h5><p class="card-text text-muted">New Arrival</p><p class="fw-bold">$30.00</p></div></div></div>
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/7.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Check-5 Loose Denim Pants</h5><p class="card-text text-muted">Limited</p><p class="fw-bold">$80.00</p></div></div></div>
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/8.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Steeplebase Balaclava</h5><p class="card-text text-muted">Limited</p><p class="fw-bold">$25.00</p></div></div></div>
     </div>
-
-
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/14.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Knu Skool Shoe</h5>
-          <p class="card-text text-muted">New Arrival</p>
-          <p class="fw-bold">$80.00</p>
-         
-        </div>
-      </div>
-    </div>
-
-    
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/15.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Super Lowpro Shoe</h5>
-          <p class="card-text text-muted">Limited</p>
-          <p class="fw-bold">$80.00</p>
-          
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 col-lg-3">
-      <div class="card h-100">
-        <img src="../img/16.jpg" class="card-img-top" alt="">
-        <div class="card-body text-center">
-          <h5 class="card-title">Old Skool Mini Backpack</h5>
-          <p class="card-text text-muted">Limited</p>
-          <p class="fw-bold">$35.00</p>
-          
-        </div>
-      </div>
-    </div> 
   </div>
-</div>
+
+  <div class="container pb-5">
+    <h2 class="mb-4">Kids</h2>
+    <div class="row g-4">
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/9.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Little Kids Sk8-Hi Side Zip Shoe</h5><p class="card-text text-muted">Top Seller</p><p class="fw-bold">$45.00</p></div></div></div>
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/10.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Little Kids Loot Halloween T-Shirt</h5><p class="card-text text-muted">New Arrival</p><p class="fw-bold">$20.00</p></div></div></div>
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/11.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Old Skool Drop V Backpack</h5><p class="card-text text-muted">Limited</p><p class="fw-bold">$45.00</p></div></div></div>
+      <div class="col-md-4 col-lg-3"><div class="card h-100"><img src="../img/12.jpg" class="card-img-top" alt=""><div class="card-body text-center"><h5 class="card-title">Kids Check-5 Loose Denim Pants</h5><p class="card-text text-muted">Limited</p><p class="fw-bold">$75.00</p></div></div></div>
+    </div>
+  </div>
 
   <?php include '../component/footer.php'; ?>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
 </html>

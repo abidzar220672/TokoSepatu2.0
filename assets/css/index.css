@@ -227,3 +227,11 @@ nav .icon {
       font-size: 1.2rem;
       text-decoration: none;
     }
+
+/* ===== OVERRIDE: hapus style nav lama agar tidak bentrok dengan navbar baru ===== */
+nav {
+  all: unset;
+}
+.dropdown-icon, .logo, nav .icon {
+  display: none !important;
+}
